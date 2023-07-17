@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="banner">
+        <div class="banner__hamburger">
+            <img class="banner__hamburger-image" src="./images/menu.svg" alt="меню">
+        </div>
+        <menu class="menu">
+            <ul>
+                <a href="#registration__greetings"><li>О мероприятии</li></a>
+                <a href="#registration__data"><li>Регистрация</li></a>
+                <a href="#price"><li>Стоимость участия</li></a>
+                <a href="#speakers"><li>Спикеры</li></a>
+            </ul>
+        </menu>
+        <div class="banner__info">
+            <img class="banner__logo" src="./images/лого.svg" alt="">
+            <h1 class="banner__header">Название мероприятия</h1>
+            <p class="banner__date">4 мая 2049</p>
+            <p class="banner__place">в самом сердце страны</p>
+            <button id="registration-btn">Регистрация</button>
+        </div>
+    </section>
+    <section class="registration">
+        <div id="registration__greetings" class="registration__greetings">
+            Дорогие друзья!<br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br /><br /> 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div id="registration__data" class="registration__data">
+            <h2 class="registration__header">Регистрация</h2>
+            <p class="registration__description">Пожалуйста, проверьте правильность введенных данных:</p>
+            <div class="registration__infoblock">
+                <p class="registration__inforow">
+                    <span>ФИО:</span>
+                    <span>Иванов Иван Иванович</span>
+                </p>
+                <p class="registration__inforow">
+                    <span>Место работы:</span>
+                    <span>DIRECTUM</span>
+                </p>
+                <p class="registration__inforow">
+                    <span>E-mail:</span>
+                    <span>ivanov_ii@directum.ru</span>
+                </p>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="price" class="price">
+        <h2 class="price__header">Стоимость участия</h2>
+        <table class="price__table">
+            <tr>
+                <th></th>
+                <th>Стоимость ДО 1 января</th>
+                <th>Стоимость ПОСЛЕ 1 января</th>
+            </tr>
+            <tr>
+                <td>С проживанием в 2-местном номере</td>
+                <td>30 000 ₽</td>
+                <td>35 000 ₽</td>
+            </tr>
+            <tr>
+                <td>Доплата за 1-местное проживание</td>
+                <td>500 ₽</td>
+                <td>1 500 ₽</td>
+            </tr>
+        </table>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2 class="gallery__header">Галерея</h2>
+        <div class="gallery__slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <img id="slide-img1" class="gallery__image" src="./images/slider/slider1.png" alt="Слайд 1">
+            <img id="slide-img2" class="gallery__image" src="./images/slider/slider2.png" alt="Слайд 2">
+            <img id="slide-img3" class="gallery__image" src="./images/slider/slider3.png" alt="Слайд 3">
+            <div class="gallery__control">
+                <label id="control1" for="slide1" ></label>
+                <label id="control2" for="slide2" ></label>
+                <label id="control3" for="slide3" ></label>
+            </div>
+        </div>
+    </section>
+    <section id="speakers" class="speakers">
+        <h2 class="speakers__header"></h2>
+        <div class="speakers__list">
+            <div class="speaker">
+                <img class="speaker__avatar" src="./images/speaker.png" alt="">
+                <p class="speaker__name">Детектив пикачу</p>
+                <p class="speaker__description">уморительный, остроумный и обаятельный сыщик</p>
+            </div>
+            <div class="speaker">
+                <img class="speaker__avatar" src="./images/speaker.png" alt="">
+                <p class="speaker__name">Детектив пикачу</p>
+                <p class="speaker__description">уморительный, остроумный и обаятельный сыщик</p>
+            </div>
+            <div class="speaker">
+                <img class="speaker__avatar" src="./images/speaker.png" alt="">
+                <p class="speaker__name">Детектив пикачу</p>
+                <p class="speaker__description">уморительный, остроумный и обаятельный сыщик</p>
+            </div>
+            <div class="speaker">
+                <img class="speaker__avatar" src="./images/speaker.png" alt="">
+                <p class="speaker__name">Детектив пикачу</p>
+                <p class="speaker__description">уморительный, остроумный и обаятельный сыщик</p>
+            </div>
+            <div class="speaker">
+                <img class="speaker__avatar" src="./images/speaker.png" alt="">
+                <p class="speaker__name">Детектив пикачу</p>
+                <p class="speaker__description">уморительный, остроумный и обаятельный сыщик</p>
+            </div>
+            <div class="speaker">
+                <img class="speaker__avatar" src="./images/speaker.png" alt="">
+                <p class="speaker__name">Детектив пикачу</p>
+                <p class="speaker__description">уморительный, остроумный и обаятельный сыщик</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img src="./images/directum.svg" alt="">
+        <p>&copy; directum, 2019</p>
+    </footer>
+    <form id="form-registration" class="form-registration" action="">
+        <h2 class="form-registration__header">Регистрация</h2>
+        <input class="form-registration__field" type="text" placeholder="ФИО">
+        <input class="form-registration__field" type="email" placeholder="email">
+        <button class="form-registration__button">Регистрация</button>
+        <div id="form-registration__button-close" class="form-registration__button-close">
+            <img src="./images/close.svg" alt="">
+        </div>
+    </form>
+</body>
+<script>
+    document.getElementById('registration-btn').onclick = function() {
+        document.getElementById('form-registration').style.display = 'block';
+    };
+    document.getElementById('form-registration__button-close').onclick = function() {
+        document.getElementById('form-registration').style.display = 'none';
+    };
+</script>
+</html>

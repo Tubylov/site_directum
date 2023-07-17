@@ -1,0 +1,498 @@
+@font-face {
+    font-family: "Roboto Light";
+    src: url("./fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: url("./fonts/SegoeUI/Segoe-UI.ttf");
+}
+:root{
+    --backColorBanner: #17A2B8;
+    --backColor: #F8F9FA;
+    --fontSizeSmall: 16px;
+    --fontSizeMiddle: 24px;
+    --fontSizeLarge: 32px;
+    --fontSizeHeader: 36px;
+    --fontSizeMenuItem: 18px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 300;
+    font-size: var(--fontSizeSmall);
+    line-height: 21.28px;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+section:nth-child(even){
+    background-color: var(--backColor);
+}
+section h2{
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    font-size: var(--fontSizeLarge);
+    font-weight: 400;
+}
+button{
+    width: 208px;
+    height: 56px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--fontSizeSmall);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background-color: #2F418A;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.banner{
+    height: 793px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: var(--backColorBanner);
+}
+.banner__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 202px;
+
+}
+.banner__logo{
+    width: 142px;
+    height: 142px;
+    display: block;
+}
+.banner__header{
+    height: 48px;
+    line-height: 48px;
+    margin: 48px 0px 32px 0px;
+    text-align: center;
+    font-size: var(--fontSizeHeader);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.banner p{
+    height: 32px;
+    font-size: var(--fontSizeMiddle);
+    line-height: 31.92px;
+    font-weight: 400;
+}
+.banner__date{
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.banner__place{
+    margin-bottom: 48px;
+}
+.banner__hamburger{
+    display: none;
+    width: 25px;
+    height: 14px;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    cursor: pointer;
+}
+.banner__hamburger-image{
+    width: 100%;
+    height: 100%;
+}
+.banner__hamburger:hover~.menu{
+    display: flex;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    position: absolute;
+    top: 32px;
+}
+.menu ul{
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.menu li{
+    height: 100%;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: var(--fontSizeMenuItem);
+}
+.menu:hover{
+    display: flex;
+}
+.registration{
+    height: 306px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration__greetings{
+    width: 540px;
+    text-align: center;
+}
+.registration__data{
+    width: 570px;
+    height: 291px;
+    padding: 0px 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.registration__header{
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    font-size: var(--fontSizeLarge);
+    margin: 48px 0px 16px 0px;
+}
+.registration__description{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.registration__infoblock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.registration__inforow{
+    display: flex;
+}
+.registration__inforow span{
+    display: block;
+    min-width: 165px;
+}
+.price{
+    min-height: 333px;
+    padding-bottom: 34px;
+}
+.price__header{
+    margin-top: 48px;
+    margin-bottom: 32px;
+    height: 60px;
+}
+.price__header::after{
+    display: block;
+    font-size: var(--fontSizeSmall);
+    content: '(на 1 человека)';
+    line-height: 16px;
+}
+.price__table{
+    width: 100%;
+    max-width: 1140px;
+    min-width: 500px;
+    margin: 0px auto;
+    border-collapse: collapse;
+}
+.price__table th{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+}
+.price__table tr{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 12px 14px 12px;
+    border-top: 1px solid #DEE2E6;
+    text-align: left;
+}
+.price__table tr:first-child{
+    border-bottom: 1px solid #DEE2E6;
+}
+.price__table td{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-right: 24px;
+}
+.gallery{
+    height: auto;
+    padding-top: 45px;
+}
+.gallery__header{
+    margin-bottom: 35px;
+}
+.gallery__slider{
+    width: 100%;
+    position: relative;
+}
+.gallery__image{
+    width: 100%;
+    display: none;
+}
+.gallery__slider input[type="radio"]{
+    display: none;
+}
+.gallery__control{
+    width: 106px;
+    height: 3px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 48px;
+    left: calc(50% - 53px);
+}
+.gallery__control label{
+    width: 30px;
+    height: 3px;
+    background-color: #E6B37A;
+    cursor: pointer;
+}
+#slide1:checked~#slide-img1,
+#slide2:checked~#slide-img2,
+#slide3:checked~#slide-img3{
+    display: block;
+}
+#slide1:checked~.gallery__control > #control1,
+#slide2:checked~.gallery__control > #control2,
+#slide3:checked~.gallery__control > #control3{
+    background-color: #FF8A00;
+    ;
+}
+.speakers{
+    min-height: 605px;
+    padding: 48px;
+}
+.speakers__header{
+    margin-bottom: 32px;
+}
+.speakers__header::after{
+    content: 'Наши спикеры';
+}
+.speakers__list{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+.speaker{
+    width: 217px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 16px 24px 16px;
+}
+.speaker__avatar{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 8px;
+}
+.speaker__name{
+    font-size: 20px;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    margin-bottom: 8px;
+}
+.speaker__description{
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--backColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    width: 130px;
+    height: 28px;
+}
+footer p{
+    margin-top: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #BABABA;
+}
+.form-registration{
+    width: 404px;
+    height: 252px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    padding-bottom: 34px;
+    position: fixed;
+    top: 25vh;
+    left: calc(50% - 202px);
+    z-index: 100;
+    background-color: #fff;
+    color: #B5BFC3;
+}
+.form-registration__header{
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    color: #9FA3AB;
+    margin-bottom: 24px;
+    font-family: "Roboto Light";
+}
+.form-registration__field{
+    width: 100%;
+    height: 28px;
+    border: 1px solid #B5BFC3;
+    margin-bottom: 16px;
+    padding: 6px 8px;
+    font-family: "Roboto Regular";
+}
+.form-registration__field::placeholder{
+    font-size: 14px;
+    color: #B5BFC3;
+    font-family: "Roboto Regular";
+}
+.form-registration__button{
+    width: 127px;
+    height: 38px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+.form-registration__button-close{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+.form-registration__button-close img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 768px) {
+    .banner{
+        height: 1024px;
+    }
+    .banner__info{
+        margin-top: 322px;
+    }
+    .banner__header{
+        margin: 16px 0px 24px 0px;
+    }
+    .banner__header{
+        height: auto;
+    }
+    .registration{
+        height: auto;
+        flex-direction: column;
+        padding: 48px 23px 42px 23px;
+    }
+    .registration__greetings{
+        width: 100%;
+        text-align: left;
+    }
+    .registration__data{
+        width: 100%;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .gallery__control{
+        bottom: 24px;
+    }
+    .speakers__header::after{
+        content: 'Готовятся к общению';
+    }
+}
+@media screen and (max-width: 550px) {
+    .banner__hamburger{
+        display: block;
+    }
+    .menu{
+        display: none;
+        width: 100%;
+        height: auto;
+        padding: 0px 20px;
+    }
+    .menu ul{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+    }
+    .menu li{
+        height: 100%;
+        line-height: 50px;
+        cursor: pointer;
+        font-size: var(--fontSizeMenuItem);
+    }
+    .registration__infocolumn{
+        min-width: auto;
+    }
+    .speakers{
+        padding: 24px;
+    }
+    .speakers__header{
+        height: 86px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .banner{
+        height: 568px;
+    }
+    .banner__info{
+        margin-top: 78px;
+    }
+    .banner__date{
+        margin-bottom: 16px;
+    }
+    .banner__place{
+        margin-bottom: 32px;
+    }
+    .registration{
+        height: auto;
+        flex-direction: column;
+        padding: 24px 15px 23px 15px;
+    }
+    .registration__header{
+        text-align: left;
+    }
+    .registration__inforow span{
+        min-width: auto;
+        padding-right: 20px;
+    }
+    .price{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .price__header{
+        text-align: left;
+        margin-top: 24px;
+    }
+    .gallery__control{
+        bottom: 16px;
+    }
+}
